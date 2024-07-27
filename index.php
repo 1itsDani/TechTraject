@@ -1,5 +1,6 @@
 <?php
 include "includes/discord.inc.php";
+include "includes/youtube.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -14,7 +15,6 @@ include "includes/discord.inc.php";
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
   <link rel="stylesheet" href="/assets/css/style.css">
-
 </head>
 
 <body class="max-w-screen px-1">
@@ -48,7 +48,7 @@ include "includes/discord.inc.php";
       <h1 class="text-center text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl text-black font-bold w-3/4 lg:w-1/2 mx-auto" id="title"></h1>
       <p class="text-xl text-center mt-8">
         Leer en creeër samen, ongeacht je ervaring.<br />Met al
-        <?= getdiscorduseramount() ?> Discord leden.
+        <?= getDiscordUserAmount() ?> Discord leden en <?= getYouTubeSubscribers() ?> YouTube abonnees.
       </p>
       <div class="text-center mt-6 flex justify-center gap-2">
         <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" variant="solid" color="slate" href="https://discord.gg/XpUF57HCEY" target="_blank"><svg class="h-5 sm:mr-2" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -68,11 +68,18 @@ include "includes/discord.inc.php";
     </section>
   </div>
   </div>
+  
 
+  <div class="h-64 sm:h-96 md:h-screen lg:h-screen xl:h-screen"></div>
+  <?php
+  include "sections/Video.php";
+  ?>
+  
   <div class="h-screen"></div>
   <?php
   include "sections/Jair.php";
   ?>
+
 
   <footer class="text-center py-4 mt-8 border-t">
     <p>&copy; 2024. All rights reserved. Credits to ItsDani @it.gov</p>
