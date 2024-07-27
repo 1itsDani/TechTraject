@@ -11,7 +11,7 @@ include "includes/discord.inc.php";
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/typewrite.js"></script> <!-- Add this line to include the Typewriter.js script -->
+    <script src="/assets/js/typewrite.js"></script>
 </head>
 
 <body class="max-w-screen px-1">
@@ -41,29 +41,25 @@ include "includes/discord.inc.php";
         </header>
         <section class="mt-32">
             <h1 id="typewriter" class="text-center text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl text-black font-bold w-3/4 lg:w-1/2 mx-auto"></h1>
-
-            <div class="text-center mt-6 flex justify-center gap-2">
-                <svg class="h-5 sm:mr-2" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                </svg>
-                </a>
-
-            </div>
+            <p class="text-xl text-center mt-8 w-3/4 lg:w-1/2 mx-auto">
+                Welkom bij mijn projectpagina! Hier vind je een selectie van de projecten waar ik aan heb gewerkt. Elk project bevat een korte beschrijving en een link naar de bijbehorende GitHub repository. Bekijk mijn werk en ontdek hoe je zelf kunt bijdragen.
+            </p>
         </section>
 
         <section class="container mx-auto mt-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Begin project item -->
                 <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
-                    <img src="/assets/images/Screenshot_2024-07-09_at_11.20.11_3.jpeg" alt="Project 1 Logo" class="custom-img mb-4">
-                    <h1>Calendar Tool Breeze</h1>
-                    <br>
+                    <img src="/assets/images/Screenshot_2024-07-09_at_11.20.11_3.jpeg" alt="CalSync Logo" class="custom-img mb-4">
+                    <h2 class="text-2xl font-bold mb-2">CalSync</h2>
+                    <p class="text-center mb-4">Een tool om je kalender te synchroniseren en beheren. Perfect voor persoonlijke en zakelijke afspraken.</p>
                     <a href="https://github.com/Cybon1/CalendarToolBreeze" class="bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700" target="_blank">View on GitHub</a>
                 </div>
-                <!-- Repeat project items as needed -->
-                <!-- Add more projects here -->
+                <!-- Voeg meer projecten toe op dezelfde manier -->
             </div>
         </section>
     </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

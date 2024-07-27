@@ -65,3 +65,7 @@
     height: 100%;
   }
 }
+
+#title {
+  min-height: 2em; /* Pas dit aan aan de grootte van je tekst */
+}

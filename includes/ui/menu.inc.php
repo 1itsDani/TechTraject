@@ -1,6 +1,6 @@
 <nav class="border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/index.php" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/assets/images/image.png" class="h-10" alt="TechTraject Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
@@ -20,7 +20,13 @@
                 <li>
                     <a href="projecten.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Projecten</a>
                 </li>
-            </ul>
+                <li>
+                    <a href="Subscribe to email.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Subscribe to email</a>
+                </li>
+                <li>
+                    <a href="equipment.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Equipment</a>
+                </li>
+             </ul>
         </div>
     </div>
 </nav>
